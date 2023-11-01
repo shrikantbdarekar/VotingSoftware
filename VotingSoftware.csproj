@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CF4E82D-685E-4D78-9A9F-9790DED4EC70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VotingSoftware</RootNamespace>
+    <AssemblyName>VotingSoftware</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormActiveMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActiveMode.Designer.cs">
+      <DependentUpon>FormActiveMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminMode.Designer.cs">
+      <DependentUpon>FormAdminMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAreaDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAreaDetails.Designer.cs">
+      <DependentUpon>FormAreaDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackground.Designer.cs">
+      <DependentUpon>FormBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCandidateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCandidateDetails.Designer.cs">
+      <DependentUpon>FormCandidateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataCamera.Designer.cs">
+      <DependentUpon>FormDataCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataImageFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataImageFile.Designer.cs">
+      <DependentUpon>FormDataImageFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormElectionSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormElectionSettings.Designer.cs">
+      <DependentUpon>FormElectionSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGeneralUserMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGeneralUserMode.Designer.cs">
+      <DependentUpon>FormGeneralUserMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIssueToken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIssueToken.Designer.cs">
+      <DependentUpon>FormIssueToken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessage.Designer.cs">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPanelDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPanelDetails.Designer.cs">
+      <DependentUpon>FormPanelDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrepareElectionData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrepareElectionData.Designer.cs">
+      <DependentUpon>FormPrepareElectionData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResultGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResultGeneral.Designer.cs">
+      <DependentUpon>FormResultGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResultGraphs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResultGraphs.Designer.cs">
+      <DependentUpon>FormResultGraphs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResultMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResultMode.Designer.cs">
+      <DependentUpon>FormResultMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResultPanelwise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResultPanelwise.Designer.cs">
+      <DependentUpon>FormResultPanelwise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResultVotingPercentage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResultVotingPercentage.Designer.cs">
+      <DependentUpon>FormResultVotingPercentage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchCandidate.Designer.cs">
+      <DependentUpon>FormSearchCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchVoter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchVoter.Designer.cs">
+      <DependentUpon>FormSearchVoter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoterAdminMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoterAdminMode.Designer.cs">
+      <DependentUpon>FormVoterAdminMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoterDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoterDetails.Designer.cs">
+      <DependentUpon>FormVoterDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoterUserMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoterUserMode.Designer.cs">
+      <DependentUpon>FormVoterUserMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVoterVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVoterVerification.Designer.cs">
+      <DependentUpon>FormVoterVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVotingAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVotingAction.Designer.cs">
+      <DependentUpon>FormVotingAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormActiveMode.resx">
+      <DependentUpon>FormActiveMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminMode.resx">
+      <DependentUpon>FormAdminMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAreaDetails.resx">
+      <DependentUpon>FormAreaDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBackground.resx">
+      <DependentUpon>FormBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCandidateDetails.resx">
+      <DependentUpon>FormCandidateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataCamera.resx">
+      <DependentUpon>FormDataCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataImageFile.resx">
+      <DependentUpon>FormDataImageFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormElectionSettings.resx">
+      <DependentUpon>FormElectionSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGeneralUserMode.resx">
+      <DependentUpon>FormGeneralUserMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIssueToken.resx">
+      <DependentUpon>FormIssueToken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessage.resx">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPanelDetails.resx">
+      <DependentUpon>FormPanelDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrepareElectionData.resx">
+      <DependentUpon>FormPrepareElectionData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResultGeneral.resx">
+      <DependentUpon>FormResultGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResultGraphs.resx">
+      <DependentUpon>FormResultGraphs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResultMode.resx">
+      <DependentUpon>FormResultMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResultPanelwise.resx">
+      <DependentUpon>FormResultPanelwise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResultVotingPercentage.resx">
+      <DependentUpon>FormResultVotingPercentage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchCandidate.resx">
+      <DependentUpon>FormSearchCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchVoter.resx">
+      <DependentUpon>FormSearchVoter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoterAdminMode.resx">
+      <DependentUpon>FormVoterAdminMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoterDetails.resx">
+      <DependentUpon>FormVoterDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoterUserMode.resx">
+      <DependentUpon>FormVoterUserMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVoterVerification.resx">
+      <DependentUpon>FormVoterVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVotingAction.resx">
+      <DependentUpon>FormVotingAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk_black.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk_orange.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stamp1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stamp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voting1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_exit_1.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_open_1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_admin.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_result.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_search.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_verification.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_vote.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_change_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_change_3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scan.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
