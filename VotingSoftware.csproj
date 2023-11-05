@@ -406,7 +406,13 @@
     <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="login_screen.png" />
+    <Content Include="01login_mode.PNG" />
+    <Content Include="02admin_mode.PNG" />
+    <Content Include="03search_voter.PNG" />
+    <Content Include="04voting_room.PNG" />
+    <Content Include="05result_mod.PNG" />
+    <Content Include="00login_screen.png" />
+    <Content Include="06voter.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
