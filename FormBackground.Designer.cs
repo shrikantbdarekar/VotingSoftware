@@ -98,7 +98,7 @@ namespace VotingSoftware
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(931, 47);
             this.label1.TabIndex = 34;
-            this.label1.Text = "Election Voting System";
+            this.label1.Text = "Voting Software";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
