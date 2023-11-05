@@ -15,8 +15,9 @@ Users can download and use it like ready templates and can implement logic as pe
 requirement and use dabases of their own choices like MS Access or MS SQL or My SQL etc.
 
 ###############################################################
-
+Login Screen
 <img src="00login_screen.png" alt="Login Screen">
+"Login Role
 <img src="01login_mode.png" alt="Login Role">
 <img src="02admin_mode.png" alt="Admin">
 <img src="03search_voter.png" alt="Search Voter">
