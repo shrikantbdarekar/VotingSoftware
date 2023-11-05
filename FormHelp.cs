@@ -26,6 +26,7 @@ namespace VotingSoftware
             { this.BackgroundImage = Properties.Resources.help_vote; }
             else if (am == ApplicationMode.RESULT_MODE)
             { this.BackgroundImage = Properties.Resources.help_result; }
+            this.BackgroundImageLayout = ImageLayout.Zoom;
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

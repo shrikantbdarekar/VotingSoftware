@@ -56,6 +56,9 @@ namespace VotingSoftware
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
+            Application.DoEvents();
+            IsLoaded = true;
+
             try
             {
                 spWelcome.PlayLooping();
@@ -65,8 +68,7 @@ namespace VotingSoftware
                 MessageBox.Show(ex.Message);
             }
 
-            Application.DoEvents();
-            IsLoaded = true;
+           
         }
 
         public FormLogin()

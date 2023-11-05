@@ -146,6 +146,7 @@ namespace VotingSoftware
             // 
             // panelTop
             // 
+            this.panelTop.BackgroundImage = global::VotingSoftware.Properties.Resources.a_1;
             this.panelTop.Controls.Add(this.labelHeading);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
@@ -174,6 +175,7 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 39;
             this.buttonExit.Text = "E&xit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonTextReport
             // 

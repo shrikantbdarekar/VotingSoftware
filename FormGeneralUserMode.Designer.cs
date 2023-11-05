@@ -64,6 +64,9 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 13;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.buttonExit.Enter += new System.EventHandler(this.buttonSearchVoter_Enter);
+            this.buttonExit.Leave += new System.EventHandler(this.buttonSearchVoter_Leave);
             // 
             // buttonHelp
             // 
@@ -79,6 +82,9 @@ namespace VotingSoftware
             this.buttonHelp.TabIndex = 12;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.buttonHelp.Enter += new System.EventHandler(this.buttonSearchVoter_Enter);
+            this.buttonHelp.Leave += new System.EventHandler(this.buttonSearchVoter_Leave);
             // 
             // buttonSearchVoter
             // 
@@ -94,6 +100,9 @@ namespace VotingSoftware
             this.buttonSearchVoter.TabIndex = 11;
             this.buttonSearchVoter.Text = "Search Voter";
             this.buttonSearchVoter.UseVisualStyleBackColor = true;
+            this.buttonSearchVoter.Click += new System.EventHandler(this.buttonSearchVoter_Click);
+            this.buttonSearchVoter.Enter += new System.EventHandler(this.buttonSearchVoter_Enter);
+            this.buttonSearchVoter.Leave += new System.EventHandler(this.buttonSearchVoter_Leave);
             // 
             // buttonSearchCandidate
             // 
@@ -125,6 +134,7 @@ namespace VotingSoftware
             this.Controls.Add(this.buttonSearchCandidate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormGeneralUserMode";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormGeneralUserMode";
             this.ResumeLayout(false);
 

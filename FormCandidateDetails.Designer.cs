@@ -169,6 +169,7 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 3;
             this.buttonExit.Text = "E&xit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // panelDataImage
             // 
@@ -581,6 +582,7 @@ namespace VotingSoftware
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCandidateDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCandidateDetails";
             this.panelDataSymbol.ResumeLayout(false);
             this.panelDataImage.ResumeLayout(false);

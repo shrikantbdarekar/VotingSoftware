@@ -66,6 +66,9 @@ namespace VotingSoftware
             this.buttonResultGraphical.TabIndex = 9;
             this.buttonResultGraphical.Text = "Graphical Result";
             this.buttonResultGraphical.UseVisualStyleBackColor = true;
+            this.buttonResultGraphical.Click += new System.EventHandler(this.buttonResultGraphical_Click);
+            this.buttonResultGraphical.Enter += new System.EventHandler(this.buttonResultOverall_Enter);
+            this.buttonResultGraphical.Leave += new System.EventHandler(this.buttonResultOverall_Leave);
             // 
             // button2
             // 
@@ -81,6 +84,9 @@ namespace VotingSoftware
             this.button2.TabIndex = 10;
             this.button2.Text = "Voting Percentage";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Enter += new System.EventHandler(this.buttonResultOverall_Enter);
+            this.button2.Leave += new System.EventHandler(this.buttonResultOverall_Leave);
             // 
             // buttonREsultPanelwise
             // 
@@ -96,6 +102,9 @@ namespace VotingSoftware
             this.buttonREsultPanelwise.TabIndex = 8;
             this.buttonREsultPanelwise.Text = "Panelwise Result";
             this.buttonREsultPanelwise.UseVisualStyleBackColor = true;
+            this.buttonREsultPanelwise.Click += new System.EventHandler(this.buttonREsultPanelwise_Click);
+            this.buttonREsultPanelwise.Enter += new System.EventHandler(this.buttonResultOverall_Enter);
+            this.buttonREsultPanelwise.Leave += new System.EventHandler(this.buttonResultOverall_Leave);
             // 
             // buttonResultOverall
             // 
@@ -111,6 +120,9 @@ namespace VotingSoftware
             this.buttonResultOverall.TabIndex = 7;
             this.buttonResultOverall.Text = "Overall Result ";
             this.buttonResultOverall.UseVisualStyleBackColor = true;
+            this.buttonResultOverall.Click += new System.EventHandler(this.buttonResultOverall_Click);
+            this.buttonResultOverall.Enter += new System.EventHandler(this.buttonResultOverall_Enter);
+            this.buttonResultOverall.Leave += new System.EventHandler(this.buttonResultOverall_Leave);
             // 
             // buttonExit
             // 
@@ -126,6 +138,9 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 12;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.buttonExit.Enter += new System.EventHandler(this.buttonResultOverall_Enter);
+            this.buttonExit.Leave += new System.EventHandler(this.buttonResultOverall_Leave);
             // 
             // buttonHelp
             // 
@@ -141,6 +156,9 @@ namespace VotingSoftware
             this.buttonHelp.TabIndex = 11;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.buttonHelp.Enter += new System.EventHandler(this.buttonResultOverall_Enter);
+            this.buttonHelp.Leave += new System.EventHandler(this.buttonResultOverall_Leave);
             // 
             // FormResultMode
             // 

@@ -16,5 +16,13 @@ namespace VotingSoftware
         {
             InitializeComponent();
         }
+
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if (keyData == (Keys.Alt | Keys.F4))
+                return true;
+            else
+                return base.ProcessDialogKey(keyData);
+        }
     }
 }

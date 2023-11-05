@@ -50,7 +50,7 @@ namespace VotingSoftware
             this.buttonVoteTransaction.Location = new System.Drawing.Point(12, 146);
             this.buttonVoteTransaction.Name = "buttonVoteTransaction";
             this.buttonVoteTransaction.Size = new System.Drawing.Size(223, 37);
-            this.buttonVoteTransaction.TabIndex = 10;
+            this.buttonVoteTransaction.TabIndex = 3;
             this.buttonVoteTransaction.Text = "Vote Transaction";
             this.buttonVoteTransaction.UseVisualStyleBackColor = true;
             this.buttonVoteTransaction.Click += new System.EventHandler(this.buttonVoteTransaction_Click);
@@ -68,7 +68,7 @@ namespace VotingSoftware
             this.buttonResult.Location = new System.Drawing.Point(13, 189);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(223, 37);
-            this.buttonResult.TabIndex = 11;
+            this.buttonResult.TabIndex = 4;
             this.buttonResult.Text = "Result";
             this.buttonResult.UseVisualStyleBackColor = true;
             this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
@@ -86,7 +86,7 @@ namespace VotingSoftware
             this.buttonExit.Location = new System.Drawing.Point(13, 275);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(223, 37);
-            this.buttonExit.TabIndex = 13;
+            this.buttonExit.TabIndex = 6;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
@@ -104,7 +104,7 @@ namespace VotingSoftware
             this.buttonHelp.Location = new System.Drawing.Point(13, 232);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(223, 37);
-            this.buttonHelp.TabIndex = 12;
+            this.buttonHelp.TabIndex = 5;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
             this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
@@ -122,7 +122,7 @@ namespace VotingSoftware
             this.buttonVoteAdmin.Location = new System.Drawing.Point(12, 103);
             this.buttonVoteAdmin.Name = "buttonVoteAdmin";
             this.buttonVoteAdmin.Size = new System.Drawing.Size(223, 37);
-            this.buttonVoteAdmin.TabIndex = 9;
+            this.buttonVoteAdmin.TabIndex = 2;
             this.buttonVoteAdmin.Text = "Vote Admin";
             this.buttonVoteAdmin.UseVisualStyleBackColor = true;
             this.buttonVoteAdmin.Click += new System.EventHandler(this.buttonVoteAdmin_Click);
@@ -140,7 +140,7 @@ namespace VotingSoftware
             this.buttonGeneralUSer.Location = new System.Drawing.Point(12, 60);
             this.buttonGeneralUSer.Name = "buttonGeneralUSer";
             this.buttonGeneralUSer.Size = new System.Drawing.Size(223, 37);
-            this.buttonGeneralUSer.TabIndex = 8;
+            this.buttonGeneralUSer.TabIndex = 1;
             this.buttonGeneralUSer.Text = "General User";
             this.buttonGeneralUSer.UseVisualStyleBackColor = true;
             this.buttonGeneralUSer.Click += new System.EventHandler(this.buttonGeneralUSer_Click);
@@ -158,7 +158,7 @@ namespace VotingSoftware
             this.buttonAdmin.Location = new System.Drawing.Point(12, 17);
             this.buttonAdmin.Name = "buttonAdmin";
             this.buttonAdmin.Size = new System.Drawing.Size(223, 37);
-            this.buttonAdmin.TabIndex = 7;
+            this.buttonAdmin.TabIndex = 0;
             this.buttonAdmin.Text = "Admin";
             this.buttonAdmin.UseVisualStyleBackColor = true;
             this.buttonAdmin.Click += new System.EventHandler(this.buttonAdmin_Click);

@@ -80,6 +80,9 @@ namespace VotingSoftware
             this.buttonNo.TabIndex = 11;
             this.buttonNo.Text = "No";
             this.buttonNo.UseVisualStyleBackColor = true;
+            this.buttonNo.Click += new System.EventHandler(this.buttonNo_Click);
+            this.buttonNo.Enter += new System.EventHandler(this.buttonYes_Enter);
+            this.buttonNo.Leave += new System.EventHandler(this.buttonYes_Leave);
             // 
             // buttonYes
             // 
@@ -95,6 +98,9 @@ namespace VotingSoftware
             this.buttonYes.TabIndex = 10;
             this.buttonYes.Text = "Yes";
             this.buttonYes.UseVisualStyleBackColor = true;
+            this.buttonYes.Click += new System.EventHandler(this.buttonYes_Click);
+            this.buttonYes.Enter += new System.EventHandler(this.buttonYes_Enter);
+            this.buttonYes.Leave += new System.EventHandler(this.buttonYes_Leave);
             // 
             // buttonOk
             // 
@@ -114,6 +120,7 @@ namespace VotingSoftware
             // timer1
             // 
             this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormMessage
             // 
@@ -122,14 +129,18 @@ namespace VotingSoftware
             this.BackgroundImage = global::VotingSoftware.Properties.Resources.bk_black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(322, 161);
+            this.Controls.Add(this.buttonNo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelMessage);
-            this.Controls.Add(this.buttonNo);
-            this.Controls.Add(this.buttonYes);
             this.Controls.Add(this.buttonOk);
+            this.Controls.Add(this.buttonYes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "FormMessage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMessage";
+            this.Load += new System.EventHandler(this.FormMessage_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormMessage_KeyDown);
             this.ResumeLayout(false);
 
         }

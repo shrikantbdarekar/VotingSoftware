@@ -69,6 +69,7 @@ namespace VotingSoftware
             // 
             this.buttonExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonExit.BackgroundImage")));
             this.buttonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,7 +77,7 @@ namespace VotingSoftware
             this.buttonExit.Location = new System.Drawing.Point(199, 144);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(68, 26);
-            this.buttonExit.TabIndex = 28;
+            this.buttonExit.TabIndex = 4;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
@@ -94,7 +95,7 @@ namespace VotingSoftware
             this.buttonLogin.Location = new System.Drawing.Point(121, 144);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(68, 26);
-            this.buttonLogin.TabIndex = 27;
+            this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
@@ -108,7 +109,7 @@ namespace VotingSoftware
             this.comboActiveMode.Location = new System.Drawing.Point(35, 46);
             this.comboActiveMode.Name = "comboActiveMode";
             this.comboActiveMode.Size = new System.Drawing.Size(232, 24);
-            this.comboActiveMode.TabIndex = 32;
+            this.comboActiveMode.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -117,7 +118,7 @@ namespace VotingSoftware
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(146, 22);
-            this.textBox1.TabIndex = 33;
+            this.textBox1.TabIndex = 2;
             this.textBox1.Text = "admin";
             // 
             // label1
@@ -138,7 +139,7 @@ namespace VotingSoftware
             this.textWardNo.Location = new System.Drawing.Point(121, 83);
             this.textWardNo.Name = "textWardNo";
             this.textWardNo.Size = new System.Drawing.Size(146, 22);
-            this.textWardNo.TabIndex = 34;
+            this.textWardNo.TabIndex = 1;
             this.textWardNo.Text = "admin";
             // 
             // label6
@@ -155,6 +156,7 @@ namespace VotingSoftware
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.buttonLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VotingSoftware.Properties.Resources.bk_black;

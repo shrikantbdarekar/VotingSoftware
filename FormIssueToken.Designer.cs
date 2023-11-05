@@ -85,6 +85,7 @@ namespace VotingSoftware
             this.buttonIssue.TabIndex = 30;
             this.buttonIssue.Text = "ISSUE";
             this.buttonIssue.UseVisualStyleBackColor = true;
+            this.buttonIssue.Click += new System.EventHandler(this.buttonIssue_Click);
             // 
             // FormIssueToken
             // 
@@ -98,7 +99,9 @@ namespace VotingSoftware
             this.Controls.Add(this.buttonIssue);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormIssueToken";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormIssueToken";
+            this.Load += new System.EventHandler(this.FormIssueToken_Load);
             this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

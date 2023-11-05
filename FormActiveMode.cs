@@ -52,7 +52,12 @@ namespace VotingSoftware
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-
+            //spExit.Play();
+            FormMessage frm = new FormMessage("Do you want to Exit?", MessageBoxButtons.YesNo, false);
+            if (frm.ShowDialog() == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void buttonAdmin_Leave(object sender, EventArgs e)

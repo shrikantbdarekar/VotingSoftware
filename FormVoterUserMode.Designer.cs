@@ -32,8 +32,8 @@ namespace VotingSoftware
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVoterUserMode));
             this.panelExit = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonExit = new System.Windows.Forms.Button();
             this.textPassword = new System.Windows.Forms.TextBox();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
             this.buttonVotingRoom = new System.Windows.Forms.Button();
             this.labelHeading = new System.Windows.Forms.Label();
@@ -45,12 +45,13 @@ namespace VotingSoftware
             // 
             this.panelExit.BackColor = System.Drawing.Color.Transparent;
             this.panelExit.Controls.Add(this.label1);
-            this.panelExit.Controls.Add(this.buttonExit);
             this.panelExit.Controls.Add(this.textPassword);
+            this.panelExit.Controls.Add(this.buttonExit);
             this.panelExit.Location = new System.Drawing.Point(1, 44);
             this.panelExit.Name = "panelExit";
             this.panelExit.Size = new System.Drawing.Size(248, 144);
             this.panelExit.TabIndex = 10;
+            this.panelExit.Visible = false;
             // 
             // label1
             // 
@@ -63,6 +64,16 @@ namespace VotingSoftware
             this.label1.Size = new System.Drawing.Size(212, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "ENTER PASSWORD TO EXIT";
+            // 
+            // textPassword
+            // 
+            this.textPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPassword.Location = new System.Drawing.Point(76, 49);
+            this.textPassword.Name = "textPassword";
+            this.textPassword.PasswordChar = '@';
+            this.textPassword.Size = new System.Drawing.Size(94, 24);
+            this.textPassword.TabIndex = 3;
+            this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonExit
             // 
@@ -78,16 +89,9 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 2;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
-            // 
-            // textPassword
-            // 
-            this.textPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(76, 49);
-            this.textPassword.Name = "textPassword";
-            this.textPassword.PasswordChar = '@';
-            this.textPassword.Size = new System.Drawing.Size(94, 24);
-            this.textPassword.TabIndex = 3;
-            this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.buttonExit.Enter += new System.EventHandler(this.buttonVotingRoom_Enter);
+            this.buttonExit.Leave += new System.EventHandler(this.buttonVotingRoom_Leave);
             // 
             // buttonHelp
             // 
@@ -103,9 +107,13 @@ namespace VotingSoftware
             this.buttonHelp.TabIndex = 9;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.buttonHelp.Enter += new System.EventHandler(this.buttonVotingRoom_Enter);
+            this.buttonHelp.Leave += new System.EventHandler(this.buttonVotingRoom_Leave);
             // 
             // buttonVotingRoom
             // 
+            this.buttonVotingRoom.BackgroundImage = global::VotingSoftware.Properties.Resources.a_1;
             this.buttonVotingRoom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonVotingRoom.FlatAppearance.BorderSize = 0;
             this.buttonVotingRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -117,6 +125,9 @@ namespace VotingSoftware
             this.buttonVotingRoom.TabIndex = 8;
             this.buttonVotingRoom.Text = "Enter Voting Room";
             this.buttonVotingRoom.UseVisualStyleBackColor = true;
+            this.buttonVotingRoom.Click += new System.EventHandler(this.buttonVotingRoom_Click);
+            this.buttonVotingRoom.Enter += new System.EventHandler(this.buttonVotingRoom_Enter);
+            this.buttonVotingRoom.Leave += new System.EventHandler(this.buttonVotingRoom_Leave);
             // 
             // labelHeading
             // 
@@ -129,7 +140,7 @@ namespace VotingSoftware
             this.labelHeading.Name = "labelHeading";
             this.labelHeading.Size = new System.Drawing.Size(250, 39);
             this.labelHeading.TabIndex = 12;
-            this.labelHeading.Text = "Voting";
+            this.labelHeading.Text = "Voting Room";
             this.labelHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
@@ -147,6 +158,8 @@ namespace VotingSoftware
             this.button1.TabIndex = 11;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Enter += new System.EventHandler(this.buttonVotingRoom_Enter);
+            this.button1.Leave += new System.EventHandler(this.buttonVotingRoom_Leave);
             // 
             // FormVoterUserMode
             // 
@@ -161,8 +174,12 @@ namespace VotingSoftware
             this.Controls.Add(this.labelHeading);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "FormVoterUserMode";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormVoterUserMode";
+            this.Load += new System.EventHandler(this.FormVoterUserMode_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormVoterUserMode_KeyDown);
             this.panelExit.ResumeLayout(false);
             this.panelExit.PerformLayout();
             this.ResumeLayout(false);

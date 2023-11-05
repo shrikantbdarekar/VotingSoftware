@@ -262,6 +262,7 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 3;
             this.buttonExit.Text = "E&xit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // panel1
             // 

@@ -34,8 +34,8 @@ namespace VotingSoftware
             this.panelTop = new System.Windows.Forms.Panel();
             this.labelHeading = new System.Windows.Forms.Label();
             this.panelDataImage = new System.Windows.Forms.Panel();
-            this.buttonHideImageDataPanel = new System.Windows.Forms.Button();
             this.buttonDataImage = new System.Windows.Forms.Button();
+            this.buttonHideImageDataPanel = new System.Windows.Forms.Button();
             this.buttonDataCamera = new System.Windows.Forms.Button();
             this.dgvCandidateDetails = new System.Windows.Forms.DataGridView();
             this.dgcVoterName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -110,18 +110,6 @@ namespace VotingSoftware
             this.panelDataImage.Size = new System.Drawing.Size(205, 115);
             this.panelDataImage.TabIndex = 150;
             // 
-            // buttonHideImageDataPanel
-            // 
-            this.buttonHideImageDataPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonHideImageDataPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHideImageDataPanel.Location = new System.Drawing.Point(101, 3);
-            this.buttonHideImageDataPanel.Name = "buttonHideImageDataPanel";
-            this.buttonHideImageDataPanel.Size = new System.Drawing.Size(97, 29);
-            this.buttonHideImageDataPanel.TabIndex = 7;
-            this.buttonHideImageDataPanel.TabStop = false;
-            this.buttonHideImageDataPanel.Text = "Hide";
-            this.buttonHideImageDataPanel.UseVisualStyleBackColor = true;
-            // 
             // buttonDataImage
             // 
             this.buttonDataImage.BackColor = System.Drawing.Color.Black;
@@ -133,6 +121,18 @@ namespace VotingSoftware
             this.buttonDataImage.TabIndex = 6;
             this.buttonDataImage.TabStop = false;
             this.buttonDataImage.UseVisualStyleBackColor = false;
+            // 
+            // buttonHideImageDataPanel
+            // 
+            this.buttonHideImageDataPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonHideImageDataPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHideImageDataPanel.Location = new System.Drawing.Point(101, 3);
+            this.buttonHideImageDataPanel.Name = "buttonHideImageDataPanel";
+            this.buttonHideImageDataPanel.Size = new System.Drawing.Size(97, 29);
+            this.buttonHideImageDataPanel.TabIndex = 7;
+            this.buttonHideImageDataPanel.TabStop = false;
+            this.buttonHideImageDataPanel.Text = "Hide";
+            this.buttonHideImageDataPanel.UseVisualStyleBackColor = true;
             // 
             // buttonDataCamera
             // 
@@ -240,6 +240,7 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 3;
             this.buttonExit.Text = "E&xit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonDelete
             // 

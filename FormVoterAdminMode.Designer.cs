@@ -51,6 +51,9 @@ namespace VotingSoftware
             this.buttonIssueToken.TabIndex = 5;
             this.buttonIssueToken.Text = "Issue Token";
             this.buttonIssueToken.UseVisualStyleBackColor = true;
+            this.buttonIssueToken.Click += new System.EventHandler(this.buttonIssueToken_Click);
+            this.buttonIssueToken.Enter += new System.EventHandler(this.buttonVoterVerification_Enter);
+            this.buttonIssueToken.Leave += new System.EventHandler(this.buttonVoterVerification_Leave);
             // 
             // buttonVoterVerification
             // 
@@ -66,6 +69,9 @@ namespace VotingSoftware
             this.buttonVoterVerification.TabIndex = 4;
             this.buttonVoterVerification.Text = "Voter Verification";
             this.buttonVoterVerification.UseVisualStyleBackColor = true;
+            this.buttonVoterVerification.Click += new System.EventHandler(this.buttonVoterVerification_Click);
+            this.buttonVoterVerification.Enter += new System.EventHandler(this.buttonVoterVerification_Enter);
+            this.buttonVoterVerification.Leave += new System.EventHandler(this.buttonVoterVerification_Leave);
             // 
             // buttonExit
             // 
@@ -81,6 +87,9 @@ namespace VotingSoftware
             this.buttonExit.TabIndex = 7;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.buttonExit.Enter += new System.EventHandler(this.buttonVoterVerification_Enter);
+            this.buttonExit.Leave += new System.EventHandler(this.buttonVoterVerification_Leave);
             // 
             // buttonHelp
             // 
@@ -96,6 +105,9 @@ namespace VotingSoftware
             this.buttonHelp.TabIndex = 6;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.buttonHelp.Enter += new System.EventHandler(this.buttonVoterVerification_Enter);
+            this.buttonHelp.Leave += new System.EventHandler(this.buttonVoterVerification_Leave);
             // 
             // labelHeading
             // 

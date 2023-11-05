@@ -50,12 +50,15 @@ namespace VotingSoftware
             this.buttonElectionSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonElectionSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonElectionSettings.ForeColor = System.Drawing.Color.White;
-            this.buttonElectionSettings.Location = new System.Drawing.Point(14, 271);
+            this.buttonElectionSettings.Location = new System.Drawing.Point(14, 260);
             this.buttonElectionSettings.Name = "buttonElectionSettings";
             this.buttonElectionSettings.Size = new System.Drawing.Size(223, 37);
             this.buttonElectionSettings.TabIndex = 14;
             this.buttonElectionSettings.Text = "Election Settings";
             this.buttonElectionSettings.UseVisualStyleBackColor = true;
+            this.buttonElectionSettings.Click += new System.EventHandler(this.buttonElectionSettings_Click);
+            this.buttonElectionSettings.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonElectionSettings.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // labelHeading
             // 
@@ -78,12 +81,15 @@ namespace VotingSoftware
             this.buttonPrepareElectionData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPrepareElectionData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrepareElectionData.ForeColor = System.Drawing.Color.White;
-            this.buttonPrepareElectionData.Location = new System.Drawing.Point(14, 228);
+            this.buttonPrepareElectionData.Location = new System.Drawing.Point(14, 217);
             this.buttonPrepareElectionData.Name = "buttonPrepareElectionData";
             this.buttonPrepareElectionData.Size = new System.Drawing.Size(223, 37);
             this.buttonPrepareElectionData.TabIndex = 13;
             this.buttonPrepareElectionData.Text = "Prepare Election Data";
             this.buttonPrepareElectionData.UseVisualStyleBackColor = true;
+            this.buttonPrepareElectionData.Click += new System.EventHandler(this.buttonPrepareElectionData_Click);
+            this.buttonPrepareElectionData.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonPrepareElectionData.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // buttonExit
             // 
@@ -93,12 +99,15 @@ namespace VotingSoftware
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.White;
-            this.buttonExit.Location = new System.Drawing.Point(13, 357);
+            this.buttonExit.Location = new System.Drawing.Point(13, 346);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(223, 37);
             this.buttonExit.TabIndex = 16;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.buttonExit.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonExit.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // buttonHelp
             // 
@@ -108,12 +117,15 @@ namespace VotingSoftware
             this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.ForeColor = System.Drawing.Color.White;
-            this.buttonHelp.Location = new System.Drawing.Point(13, 314);
+            this.buttonHelp.Location = new System.Drawing.Point(13, 303);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(223, 37);
             this.buttonHelp.TabIndex = 15;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            this.buttonHelp.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonHelp.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // buttonCandidateDetails
             // 
@@ -123,12 +135,15 @@ namespace VotingSoftware
             this.buttonCandidateDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCandidateDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCandidateDetails.ForeColor = System.Drawing.Color.White;
-            this.buttonCandidateDetails.Location = new System.Drawing.Point(13, 99);
+            this.buttonCandidateDetails.Location = new System.Drawing.Point(13, 88);
             this.buttonCandidateDetails.Name = "buttonCandidateDetails";
             this.buttonCandidateDetails.Size = new System.Drawing.Size(223, 37);
             this.buttonCandidateDetails.TabIndex = 10;
             this.buttonCandidateDetails.Text = "Candidate Details";
             this.buttonCandidateDetails.UseVisualStyleBackColor = true;
+            this.buttonCandidateDetails.Click += new System.EventHandler(this.buttonCandidateDetails_Click);
+            this.buttonCandidateDetails.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonCandidateDetails.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // buttonPanelDetails
             // 
@@ -138,12 +153,15 @@ namespace VotingSoftware
             this.buttonPanelDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPanelDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPanelDetails.ForeColor = System.Drawing.Color.White;
-            this.buttonPanelDetails.Location = new System.Drawing.Point(13, 56);
+            this.buttonPanelDetails.Location = new System.Drawing.Point(13, 45);
             this.buttonPanelDetails.Name = "buttonPanelDetails";
             this.buttonPanelDetails.Size = new System.Drawing.Size(223, 37);
             this.buttonPanelDetails.TabIndex = 9;
             this.buttonPanelDetails.Text = "Panel Details";
             this.buttonPanelDetails.UseVisualStyleBackColor = true;
+            this.buttonPanelDetails.Click += new System.EventHandler(this.buttonPanelDetails_Click);
+            this.buttonPanelDetails.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonPanelDetails.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // buttonVoterDetails
             // 
@@ -153,12 +171,15 @@ namespace VotingSoftware
             this.buttonVoterDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVoterDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVoterDetails.ForeColor = System.Drawing.Color.White;
-            this.buttonVoterDetails.Location = new System.Drawing.Point(13, 185);
+            this.buttonVoterDetails.Location = new System.Drawing.Point(13, 174);
             this.buttonVoterDetails.Name = "buttonVoterDetails";
             this.buttonVoterDetails.Size = new System.Drawing.Size(223, 37);
             this.buttonVoterDetails.TabIndex = 12;
             this.buttonVoterDetails.Text = "Voter Details";
             this.buttonVoterDetails.UseVisualStyleBackColor = true;
+            this.buttonVoterDetails.Click += new System.EventHandler(this.buttonVoterDetails_Click);
+            this.buttonVoterDetails.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonVoterDetails.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // buttonWardDetails
             // 
@@ -168,12 +189,15 @@ namespace VotingSoftware
             this.buttonWardDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonWardDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonWardDetails.ForeColor = System.Drawing.Color.White;
-            this.buttonWardDetails.Location = new System.Drawing.Point(13, 142);
+            this.buttonWardDetails.Location = new System.Drawing.Point(13, 131);
             this.buttonWardDetails.Name = "buttonWardDetails";
             this.buttonWardDetails.Size = new System.Drawing.Size(223, 37);
             this.buttonWardDetails.TabIndex = 11;
             this.buttonWardDetails.Text = "Area Details";
             this.buttonWardDetails.UseVisualStyleBackColor = true;
+            this.buttonWardDetails.Click += new System.EventHandler(this.buttonWardDetails_Click);
+            this.buttonWardDetails.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonWardDetails.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // buttonSlipsGeneration
             // 
@@ -183,12 +207,14 @@ namespace VotingSoftware
             this.buttonSlipsGeneration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSlipsGeneration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSlipsGeneration.ForeColor = System.Drawing.Color.White;
-            this.buttonSlipsGeneration.Location = new System.Drawing.Point(13, 185);
+            this.buttonSlipsGeneration.Location = new System.Drawing.Point(13, 174);
             this.buttonSlipsGeneration.Name = "buttonSlipsGeneration";
             this.buttonSlipsGeneration.Size = new System.Drawing.Size(223, 37);
             this.buttonSlipsGeneration.TabIndex = 17;
             this.buttonSlipsGeneration.Text = "Slips Generation";
             this.buttonSlipsGeneration.UseVisualStyleBackColor = true;
+            this.buttonSlipsGeneration.Enter += new System.EventHandler(this.buttonPanelDetails_Enter);
+            this.buttonSlipsGeneration.Leave += new System.EventHandler(this.buttonPanelDetails_Leave);
             // 
             // FormAdminMode
             // 
