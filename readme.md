@@ -12,8 +12,6 @@ requirement and use dabases of their own choices like MS Access or MS SQL or My 
 -----
 <img src="00login_screen.png" alt="Login Screen">
 -----
-https://github.com/shrikantbdarekar/VotingSoftware/blob/master/01login_mode.PNG
-
 <img src="01login_mode.PNG" alt="Login Role">
 <img src="02admin_mode.png" alt="Admin">
 <img src="03search_voter.png" alt="Search Voter">
