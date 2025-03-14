@@ -23,3 +23,16 @@ requirement and use dabases of their own choices like MS Access or MS SQL or My 
 <img src="05result_mod.PNG" alt="Result">
 
 <img src="06voter.PNG" alt="Result">
+
+-----
+
+# Apply For 
+
+### Online C# Project Workshop For College Students
+https://wa.me/p/8685551258164102/919765975757
+
+### Free Project Guidance For College Students
+https://wa.me/p/7965729696887851/919765975757
+
+### Free Online Internship
+https://wa.me/p/8277870308947674/919765975757
