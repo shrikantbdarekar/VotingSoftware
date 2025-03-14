@@ -14,12 +14,12 @@ requirement and use dabases of their own choices like MS Access or MS SQL or My 
 
 <img src="01login_mode.PNG" alt="Login Role">
 
-<img src="02admin_mode.png" alt="Admin">
+<img src="02admin_mode.PNG" alt="Admin">
 
-<img src="03search_voter.png" alt="Search Voter">
+<img src="03search_voter.PNG" alt="Search Voter">
 
-<img src="04voting_room.png" alt="Voting Room">
+<img src="04voting_room.PNG" alt="Voting Room">
 
-<img src="05result_mod.png" alt="Result">
+<img src="05result_mod.PNG" alt="Result">
 
-<img src="06voter.png" alt="Result">
+<img src="06voter.PNG" alt="Result">
